@@ -35,10 +35,11 @@
   right: 40px;
   /* left: 0px; */
   border-radius: 50%;
+  z-index: 1;
 }
 .hw{
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 .search{
   width: 400px;
@@ -56,10 +57,11 @@
 .hi{
   color: black;
   transition-property: background-color;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .hi:hover{
   background-color: #FD5D14;
+  border-radius: 30px;
 }
 {
    
