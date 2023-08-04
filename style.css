@@ -63,9 +63,34 @@
   background-color: #FD5D14;
   border-radius: 30px;
 }
+.bf{
+  text-align: center;
+  padding: 10px;
+  color:black;
+  font-weight: 200;
 
-.sx:hover{
-      background-color: rgb(0, 0, 0);
+}
+.bf:hover{
+  background-color: brown;
+  color: aliceblue;
+    cursor: pointer;
+  transform: scale(1.03);
+transition: all 1s ease;
+}
+
+.bb{
+  text-align: center;
+  padding: 10px;
+  color:black;
+  font-weight: 200;
+
+}
+.bb:hover{
+  background-color: brown;
+  color: aliceblue; 
+   cursor: pointer;
+  transform: scale(1.03);
+transition: all 1s ease;
 }
 .footer{
   margin-top: 50px;

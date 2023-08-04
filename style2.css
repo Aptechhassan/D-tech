@@ -132,7 +132,7 @@
     position: absolute;
     z-index: 2;
     left: 0;
-    background-image: url('IMAGES/bg-1.jpg');
+    background-image: url('images/bg-1.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -142,16 +142,11 @@
  
   }
   .banner-2 {
-    background-image: url('IMAGES/agency-img14.jpg');
+    background-image: url('images/agency-img14.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
     border-radius: 5px;
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; */
  
   }
 
@@ -392,13 +387,13 @@ border-radius: 15px 15px 0 0;
   
 }
 .card-1{
-  background-image: url('IMAGES/agency-img11.jpg');
+  background-image: url('images/agency-img11.jpg');
 }
 .card-2{
-  background-image: url('IMAGES/agency-img10.jpg');
+  background-image: url('images/agency-img10.jpg');
 }
 .card-3{
-  background-image: url('IMAGES/agency-img12.jpg');
+  background-image: url('images/agency-img12.jpg');
 }
 .card h2{
   text-align: center;
@@ -409,12 +404,13 @@ border-radius: 15px 15px 0 0;
 .card p{
   text-align: center;
   padding: 10px;
-  color:#747DA1;
+  color:black;
   font-weight: 200;
 
 }
 .card:hover{
-  background-color: rgb(43, 43, 43);
+  background-color: brown;
+  color: #fff;
   cursor: pointer;
   transform: scale(1.03);
 transition: all 1s ease;
