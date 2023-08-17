@@ -155,44 +155,34 @@
   <button class="button">
     <span>CONTACT INFO</span>
   </button>
-</div>
+   </div>
 
   <div class="text-center">
     <br>
-<h1 class="wer"><span class="war">Reach</span> & Get In Touch With Us !</h1>
+ <h1 class="wer"><span class="war">Reach</span> & Get In Touch With Us !</h1>
   </div>
-<div class="container">
-        
-  <form>      
-    <input name="name" type="text" class="feedback-input" placeholder="Name*" />   
-    <input name="email" type="text" class="feedback-input" placeholder="Email*" />
-    <textarea name="text" class="feedback-input" placeholder="Message*"></textarea>
-    <input type="submit" value="Send Message">
+  <div class="container">     
+  <form onsubmit="sendemail(); reset(); return false ;">      
+    <input name="name" type="text" id="Name" class="feedback-input" placeholder="Name*" required>   
+    <input name="email" type="email" id="email" class="feedback-input" placeholder="Email*" required>
+    <textarea name="text" class="feedback-input" id="Message" placeholder="Message*"></textarea>
+    <button type="submit" value="Send Message">Send Message</button>
   </form>
     </div>
-
-
-
-
-
-  
-</div>
-   
-
   </div>
-</div>
-<br><br><br>
-<div class="footer">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-3 ">
-    <h4 class="mb-5  o" >Company</h4>
-    <ul class="list-unstyled">
+    </div>
+   </div>
+   <br><br><br>
+     <div class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-3 ">
+     <h4 class="mb-5  o" >Company</h4>
+      <ul class="list-unstyled">
       <li class="pt-3"><a href="index.html"class="fs-5 l ">Home</a></li>
       <li class="pt-3"><a href="about.html" class="fs-5 l">About us</a></li>
       <li class="pt-3"><a href="services.html" class="fs-5 l"> Our services</a></li>
-<li class="pt-3"><a href="contact.html" class="fs-5 l ">Contact us</a></li>
-  
+      <li class="pt-3"><a href="contact.html" class="fs-5 l ">Contact us</a></li>
     </ul>
   </div>
   
@@ -202,8 +192,6 @@
       <li class="pt-3"><a href="#" class="fs-5 l ">FAQ</a></li>
       <li class="pt-3"><a href="#" class="fs-5 l ">Privacy Police</a></li>
       <li class="pt-3"><a href="#" class="fs-5 l ">Term & Conditions</a></li>
-      
-      
     </ul>
   </div>
   <div class="col-lg-3">
@@ -223,59 +211,35 @@
     <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
     <a href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram"></i></a>
     <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="bi bi-twitter"></i></a>
-  
    </div>
   </div>
-  
-  
   </div>
   </div>
   </div>
  </div>
 
+     <script src=" https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+      function sendemail(){
+                     Email.send({
+
+                      // secureToken: "c1978bd4-0516-4fdf-b8cf-5f30de823d85",
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                 Host : "smtp.gmail.com",
+                 Username : "hassan03152530851@gmail.com",
+                 Password : "hassan@12345!",
+                 To : 'hassan03152530851@gmail.',
+                 From : document.getElementById("email").value,
+                 Subject : "New contact form Enquiry",
+                     Body : "Name:" + document.getElementById("Name").value +
+                     "<br> Email:" + document.getElementById("email").value +
+                     "<br> Message:" + document.getElementById("Message").value 
+                 }).then(
+                   message => alert(message)
+                 );
+                   }
+     </script>
       
 </body>
 </html>

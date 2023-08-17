@@ -52,7 +52,6 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
-    /* left: 0px; */
     border-radius: 50%;
     z-index: 3;
   }
